@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+ <!-- 需求的servlet -->
+  <servlet>
+  <servlet-name>NeedServlet</servlet-name>
+  <servlet-class>Servlet.NeedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>NeedServlet</servlet-name>
+  <url-pattern>/needServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 用户的servlet -->
+  <servlet>
+  <servlet-name>UserServlet</servlet-name>
+  <servlet-class>Servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UserServlet</servlet-name>
+  <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+   <!-- 权限的servlet -->
+  <servlet>
+  <servlet-name>PermissionServlet</servlet-name>
+  <servlet-class>Servlet.PermissionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>PermissionServlet</servlet-name>
+  <url-pattern>/permissionServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CodeImgServlet</servlet-name>
+    <servlet-class>Servlet.CodeImgServlet</servlet-class>
+   </servlet>
+ <!-- 给servlet配置访问路径 -->
+ <servlet-mapping>
+  <servlet-name>CodeImgServlet</servlet-name>
+  <url-pattern>/code</url-pattern>
+ </servlet-mapping>
+ 
+  <display-name>xuiquzhengji</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
